@@ -4,9 +4,13 @@ TapBinary is a Processing sketch that converts audio input from tap dancing into
 # Tap Dancing Suggestions for Users
 Visual output box is displayed on the screen to show the tap dancer what the sketch is reading each sound as.
 The best way to use TapBinary is by doing eight count crawls becuase they produce one byte (8 bits or one English character) worth of sound. 
-    - To tap a 1 do a single toe with the working foot (visual output will go black)
-    - To tap a 0 do a rapid toe-heel, with the toe on the working foot and the heel on the standing foot (the visual output box will go white) 
-    - A small pause must be left between tapped bits
+
+To tap a 1 do a single toe with the working foot (visual output will go black)
+
+To tap a 0 do a rapid toe-heel, with the toe on the working foot and the heel on the standing foot (the visual output box will go white) 
+
+A small pause must be left between tapped bits
+
 A crawl consisting of just toes will produce 00000000. A crawl with heels will produce 11111111. By combinning just toes and toe-heels in your crawl you can produce a byte that can be translated to a int then a character. 
 
 For visual demonstration visit: 
